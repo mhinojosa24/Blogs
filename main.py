@@ -45,7 +45,7 @@ def check_loggedin( sess ):
 
     return False
 
-# roustes 
+# routes 
 
 @app.before_request
 def verify_logged_in():
@@ -155,7 +155,7 @@ def blog_form():
     
     return render_template('blog_form.html', loggedin=check_loggedin(session))
 
-
+#ending code ------->
 
 if __name__ == "__main__":
     app.run()
